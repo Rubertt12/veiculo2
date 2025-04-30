@@ -68,4 +68,7 @@ function mascara(i){
       }
     });
     
-    
+    document.querySelector('.btn-panic').addEventListener('click', function(e) {
+      e.preventDefault(); // Evita qualquer comportamento estranho
+      // Aqui tu bota a ação do botão de pânico
+    });
