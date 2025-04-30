@@ -62,7 +62,7 @@ function mascara(i){
         panicButton.addEventListener('click', () => {
           // Vibra por 200ms se o dispositivo suportar
           if (navigator.vibrate) {
-            navigator.vibrate(200);
+            navigator.vibrate(2000);
           }
         });
       }
