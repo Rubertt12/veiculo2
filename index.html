@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Segurança Veicular</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">Sistema de Segurança Veicular
+    <button onclick="toggleDarkMode()" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+">🌙 Modo Escuro</button>
+
+  </nav>
+
+  <div class="acesso-container">
+    <h1 class="titulo">Tela de Acesso</h1>
+
+    <label>CPF:</label>
+    <input oninput="mascara(this)" type="text" placeholder="Digite seu CPF" />
+
+    <label>Chassi:</label>
+    <input type="text" id="chassi" placeholder="Digite o chassi" />
+
+    <label>Linha:</label>
+    <input type="text" id="linha" placeholder="Linha do ônibus" />
+
+    <div class="buttons-container">
+      <button onclick="login()" class="btn btn-access">Acessar</button>
+      <button type="button" class="btn btn-clear">Limpar</button>
+    </div>
+  </div>
+
+</body>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script src="/js/scripts.js"></script>
+</html>

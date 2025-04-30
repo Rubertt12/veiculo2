@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Segurança Veicular</title>
+  <link rel="stylesheet" href="/css/alarme.css" />
+</head>
+<body>
+  <nav class="navbar">
+    Sistema de Segurança Veicular
+    <button onclick="toggleDarkMode()" class="btn-darkmode" title="Modo Escuro">🌙</button>
+  </nav>
+
+  <div class="container">
+    <div class="buttons-panic">
+      <button onclick="panico()" class="btn btn-panic" title="Botão de Pânico">
+        <img src="/img/botao.webp" alt="Botão de pânico" />
+      </button>
+    </div>
+
+    <label>Endereço aproximado:</label>
+    <input type="text" id="endereco" placeholder="Endereço" readonly />
+
+    <label>Latitude:</label>
+    <input type="text" id="latitude" placeholder="Latitude" readonly />
+
+    <label>Longitude:</label>
+    <input type="text" id="longitude" placeholder="Longitude" readonly />
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
