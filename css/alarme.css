@@ -9,8 +9,8 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  overflow: hidden; /* Adicionado: impede o scroll */
   box-sizing: border-box;
-  overflow:hidden;
 }
 
 .navbar {
